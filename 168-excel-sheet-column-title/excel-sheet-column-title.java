@@ -7,7 +7,7 @@ class Solution {
            columnNumber--;
             char ch=(char)('A'+columnNumber%26);
             a=ch+a;
-            columnNumber=columnNumber/26;
+            columnNumber/=26;
         }
         return a;
     }

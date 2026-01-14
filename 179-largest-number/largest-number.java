@@ -14,9 +14,9 @@ class Solution {
             {
                 if((s[i]+s[j]).compareTo(s[j]+s[i])<0)
                 {
-                    String temp = s[i];
-                    s[i] = s[j];
-                    s[j] = temp;
+                    String temp=s[i];
+                    s[i]=s[j];
+                    s[j]=temp;
                 }
             }
         }

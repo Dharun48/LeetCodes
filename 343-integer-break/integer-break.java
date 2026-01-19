@@ -8,7 +8,7 @@ class Solution {
         int product=1;
         while(n>4) 
         {
-            product *= 3;
+            product*=3;
             n-=3;
         }
         product*=n;

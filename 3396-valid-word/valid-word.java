@@ -1,9 +1,10 @@
 class Solution {
-    public boolean isValid(String word) {
+    public boolean isValid(String word) 
+    {
         if (word.length()<3) 
            return false;
-        boolean hasVowel=false;
-        boolean hasConsonant=false;
+        boolean Vowel=false;
+        boolean Consonant=false;
 
         for (int i=0;i<word.length();i++) 
         {
@@ -14,15 +15,16 @@ class Solution {
             }
 
             if (Character.isLetter(c)) {
-                if (c == 'a'||c=='e'||c=='i'||c=='o'||c=='u') 
+                if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u') 
                 {
-                    hasVowel = true;
-                } else {
-                    hasConsonant = true;
+                    Vowel=true;
+                } else 
+                {
+                    Consonant=true;
                 }
             }
         }
 
-        return hasVowel&&hasConsonant;
+        return Vowel&&Consonant;
     }
 }

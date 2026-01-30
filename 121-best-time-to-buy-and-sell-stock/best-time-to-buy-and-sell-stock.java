@@ -9,7 +9,7 @@ class Solution {
 
         for(int i=1;i<prices.length;i++)
          {
-            if (prices[i] < min) 
+            if (prices[i]<min) 
             {
                 min=prices[i];
             }

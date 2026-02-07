@@ -26,7 +26,6 @@ class Solution {
             }
         }
 
-        // trim extra zeros
         return java.util.Arrays.copyOf(arr, index);
     }
 }
